@@ -32,6 +32,25 @@ input.onButtonPressed(Button.A, function () {
             basic.clearScreen()
         }
     }
+    while (input.isGesture(Gesture.TiltLeft)) {
+        basic.showLeds(`
+            . . # . .
+            . . # . .
+            # # # # #
+            . . # . .
+            . . # . .
+            `)
+        basic.showLeds(`
+            # . . . #
+            . # . # .
+            . . # . .
+            . # . # .
+            # . . . #
+            `)
+        for (let i = 0; i < 4; i++) {
+            basic.clearScreen()
+        }
+    }
 })
 input.onButtonPressed(Button.B, function () {
     control.reset()
