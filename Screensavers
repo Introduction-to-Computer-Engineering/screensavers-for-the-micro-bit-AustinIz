@@ -1,0 +1,39 @@
+input.onButtonPressed(Button.A, function () {
+    while (input.isGesture(Gesture.Shake)) {
+        basic.showLeds(`
+            # . . . .
+            . # . . .
+            . . # . .
+            . . . # .
+            . . . . #
+            `)
+        basic.showLeds(`
+            . . # . .
+            . . # . .
+            . . # . .
+            . . # . .
+            . . # . .
+            `)
+        basic.showLeds(`
+            . . . . #
+            . . . # .
+            . . # . .
+            . # . . .
+            # . . . .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            # # # # #
+            . . . . .
+            . . . . .
+            `)
+        for (let i = 0; i < 5; i++) {
+            basic.clearScreen()
+        }
+    }
+})
+input.onButtonPressed(Button.B, function () {
+    control.reset()
+})
+basic.showString("THIS HAS 5 DIFFERENT SCREEN SAVERS")
