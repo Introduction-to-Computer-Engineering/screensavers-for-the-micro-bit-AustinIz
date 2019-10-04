@@ -47,7 +47,33 @@ input.onButtonPressed(Button.A, function () {
             . # . # .
             # . . . #
             `)
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < 5; i++) {
+            basic.clearScreen()
+        }
+    }
+    while (input.isGesture(Gesture.TiltRight)) {
+        basic.showLeds(`
+            # # # # #
+            # . . . #
+            # . . . #
+            # . . . #
+            # # # # #
+            `)
+        basic.showLeds(`
+            . . . . .
+            . # # # .
+            . # . # .
+            . # # # .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . . . . .
+            . . . . .
+            `)
+        for (let i = 0; i < 5; i++) {
             basic.clearScreen()
         }
     }
