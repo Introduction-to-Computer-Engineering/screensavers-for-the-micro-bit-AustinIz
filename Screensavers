@@ -77,6 +77,39 @@ input.onButtonPressed(Button.A, function () {
             basic.clearScreen()
         }
     }
+    while (input.isGesture(Gesture.ScreenUp)) {
+        basic.showLeds(`
+            # # # # #
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . . . . #
+            . . . . #
+            . . . . #
+            . . . . #
+            . . . . #
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            # # # # #
+            `)
+        basic.showLeds(`
+            # . . . .
+            # . . . .
+            # . . . .
+            # . . . .
+            # . . . .
+            `)
+        for (let i = 0; i < 5; i++) {
+            basic.clearScreen()
+        }
+    }
 })
 input.onButtonPressed(Button.B, function () {
     control.reset()
